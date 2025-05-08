@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@keyframes slidingLeft{
+    from {transform: translateX(300px);
+        opacity: 0;
+     }
+    to{transform: translateX(0px);
+        opacity: 1;
+    }
+}
+/* You can add global custom styles here if needed */
+
+.slideLeft{
+    animation:slidingLeft;
+    animation-duration: 1s;
+
+}
+
+@keyframes slidingRight{
+    from {transform: translateX(-300px);
+        opacity: 0;
+     }
+    to{transform: translateX(0px);
+        opacity: 1;
+   }
+}
+.slideRight{
+    animation:slidingRight;
+    animation-duration: 1s;
+}
